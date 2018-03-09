@@ -1,6 +1,6 @@
 <?php
-require_once "../app/models/Categoria.php";
+require_once "../app/models/CrudCategoria.php";
 
-$cat1 = new Categoria(1,'machoAlfa','So pra quem eh macho, mas nao qualquer macho tem que ser macho Alfa');
+$crud = new CrudCategoria();
 
-$cat1->getNome();
+var_dump($crud->getCategoria(1));
