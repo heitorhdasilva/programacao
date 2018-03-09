@@ -1,6 +1,7 @@
 <?php
 require_once "../app/models/CrudCategoria.php";
-
+require_once "../app/models/Categoria.php";
 $crud = new CrudCategoria();
-
-var_dump($crud->getCategoria(1));
+$cat = new Categoria('31','doces','somente doces deliciosos');
+$res = $crud->insertCategoria($cat);
+echo $res;
