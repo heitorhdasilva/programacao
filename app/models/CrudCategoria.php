@@ -58,6 +58,9 @@ class CrudCategoria
     public function updateCategoria(Categoria $cat){
         $this->conexao = DBConnection::getConexao();
 
+
+        $sql = "update categoria set nome_categoria = ".$cat->getNome.", descricao_categoria = ".$cat->getDescricao." where id_categoria = ".$cat->getId();
+
         $sql = "update categoria set nome_categoria = ".$cat->getNome.", descricao_categoria = ".$cat->getDescricao." where id_categoria = ".$cat->getId;
 
         $resul = $this->conexao->exec($sql);

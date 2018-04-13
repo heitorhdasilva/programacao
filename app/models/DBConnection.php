@@ -13,7 +13,11 @@ class DBConnection
     const USUARIO = '3info3';
     const SENHA = '3info3';
 
+<<<<<<< HEAD
+    public static   function getConexao(){
+=======
     public function getConexao(){
+>>>>>>> ed3104c9c2ee1f99b5a4c3c6e4a7d32b9f16cdea
         try {
             $conexao = new PDO("mysql:host=" . self::HOST . ";dbname=" . self::BANCO, self::USUARIO, self::SENHA);
 
