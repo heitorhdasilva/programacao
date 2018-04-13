@@ -17,7 +17,7 @@
         <?php foreach ($categorias as $categoria): ?>
         <tr>
             <td><?= $categoria->getId();?></td>
-            <td><?= $categoria->getNome();?></td>
+            <td><a href="?acao=listar&id=<?= $categoria->getId();?>"><?= $categoria->getNome();?></a></td>
         </tr>
         <?php endforeach; ?>
     </table>
