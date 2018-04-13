@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="959488ba-921f-4ec9-b726-84395391cd35" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controladores/categorias.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categorias/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/CrudCategoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/CrudCategoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/DBConnection.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,29 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrudCategoria.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CrudCategoria.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/CrudCategoria.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="60" column="155" selection-start-line="60" selection-start-column="155" selection-end-line="60" selection-end-column="155" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categorias.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controladores/categorias.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/categorias/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="626">
+              <caret line="63" column="153" selection-start-line="63" selection-start-column="153" selection-end-line="63" selection-end-column="153" />
             </state>
           </provider>
         </entry>
@@ -90,8 +73,6 @@
         <option value="$PROJECT_DIR$/app/models/DBConnection.php" />
         <option value="$PROJECT_DIR$/testes/teste_categoria.php" />
         <option value="$PROJECT_DIR$/app/models/CrudCategoria.php" />
-        <option value="$PROJECT_DIR$/app/controladores/categorias.php" />
-        <option value="$PROJECT_DIR$/app/views/categorias/index.php" />
       </list>
     </option>
   </component>
@@ -105,12 +86,6 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="237" />
-    <option name="y" value="169" />
-    <option name="width" value="1440" />
-    <option name="height" value="791" />
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -120,25 +95,24 @@
         <subPane>
           <expand>
             <path>
-              <item name="3infoi3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3infoi3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programacao" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="3infoi3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3infoi3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programacao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="3infoi3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3infoi3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programacao" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="3infoi3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3infoi3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programacao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="testes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -146,11 +120,6 @@
       </pane>
       <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -163,20 +132,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="PHP Script.teste_categoria.php">
-    <configuration name="DBConnection.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/models/DBConnection.php" />
-    <configuration name="teste_categoria.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/testes/teste_categoria.php" />
-    <list>
-      <item itemvalue="PHP Script.teste_categoria.php" />
-      <item itemvalue="PHP Script.DBConnection.php" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.teste_categoria.php" />
-        <item itemvalue="PHP Script.DBConnection.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,16 +146,15 @@
       <workItem from="1519991366485" duration="2217000" />
       <workItem from="1520596452354" duration="1856000" />
       <workItem from="1520620534906" duration="4529000" />
-      <workItem from="1523618084917" duration="3350000" />
+      <workItem from="1523623132140" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11952000" />
+    <option name="totallyTimeSpent" value="104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -208,12 +162,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32982087" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -222,9 +176,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -321,6 +272,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Produto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -342,31 +300,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Categoria.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/CrudCategoria.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="60" column="155" selection-start-line="60" selection-start-column="155" selection-end-line="60" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controladores/categorias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categorias/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="626">
+          <caret line="63" column="153" selection-start-line="63" selection-start-column="153" selection-end-line="63" selection-end-column="153" />
         </state>
       </provider>
     </entry>
