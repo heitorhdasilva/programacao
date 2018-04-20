@@ -16,14 +16,14 @@
         <th>Descricao</th>
     </tr>
     <tr>
-        <td><?=$categoria->getId()?></td>
+        <td><?=$produto->getId()?></td>
+        <td><?=$produto->getNome()?></td>
+        <td><?=$produto->getDescricao()?></td>
+        <td><?=$produto->getPreco()?></td>
         <td><?=$categoria->getNome()?></td>
-        <td><?=$categoria->getDescricao()?></td>
     </tr>
 
 </table>
-<a href="categorias.php?acao=update&id=<?= $categoria->getId()?>">Update</a>
-<a href="categorias.php?acao=delete&id=<?= $categoria->getId()?>">Delete</a>
 <a href="categorias.php">Voltar</a>
 </body>
 </html>

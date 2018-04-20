@@ -20,7 +20,6 @@ class DBConnection
 
             try {
                 $conexao = new PDO("mysql:host=" . self::HOST . ";dbname=" . self::BANCO, self::USUARIO, self::SENHA);
-
                 return $conexao;
             } catch (Exception $e) {
                 echo "Ocorreu um erro: {$e->getMessage()} na linha {$e->getLine()}";

@@ -15,6 +15,14 @@ class Produto
     private $preco;
     private $id_categoria;
 
+    public function __construct($id,$nome,$descricao,$preco,$id_categoria)
+    {
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->descricao = $descricao;
+        $this->preco = $preco;
+        $this->id_categoria;
+    }
     /**
      * @return mixed
      */

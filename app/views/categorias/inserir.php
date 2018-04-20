@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="">
+<form action="categorias.php?acao=inserir" method="post">
     <label for="nome">Nome</label>
     <input type="text" name="nome" id="nome">
     <br>
@@ -18,6 +18,7 @@
     </textarea>
     <br>
     <input type="submit" name="gravar" value="Gravar">
+    <a href="?acao=index">Cancelar</a>
 </form>
 </body>
 </html>
