@@ -15,7 +15,14 @@ switch ($acao){
         include '../views/categorias/index.php';
         break;
     case 'inserir':
-        echo 'Você escolheu inserir';
+        $crud = new CrudCategoria();
+        if (isset($_POST['gravar'])){
+            $cat = new Categoria('',$_POST['nome'],$_POST['descricao']);
+            $res = $crud->insertCategoria($cat);
+            header('Location: categorias.php');
+        }else{
+            include '../views/categorias/inserir.php';
+        }
         break;
     case 'listar':
         $crud = new CrudCategoria();
@@ -36,6 +43,11 @@ switch ($acao){
             $cat = $crud->getCategoria($_GET['id']);
             include '../views/categorias/update.php';
         }
+        break;
+    case 'delete':
+        $crud = new CrudCategoria();
+        $res = $crud->deleteCategoria($_GET['id']);
+        header('Location: categorias.php');
         break;
     default:
         echo 'acao invalida';

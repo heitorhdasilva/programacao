@@ -48,6 +48,7 @@ class CrudCategoria
         $sql = "insert into categoria (nome_categoria,descricao_categoria) values ('".$cat->getNome()."','".$cat->getDescricao()."')";
         try {
             $resultado = $this->conexao->exec($sql);
+            return $resultado;
         }catch(PDOException $e){
             echo $e->getMessage();
             return $e->getMessage();
@@ -59,11 +60,15 @@ class CrudCategoria
         $this->conexao = DBConnection::getConexao();
 
 
-        $sql = "update categoria set nome_categoria = ".$cat->getNome.", descricao_categoria = ".$cat->getDescricao." where id_categoria = ".$cat->getId();
-
-        $sql = "update categoria set nome_categoria = ".$cat->getNome.", descricao_categoria = ".$cat->getDescricao." where id_categoria = ".$cat->getId;
-
-        $resul = $this->conexao->exec($sql);
+        $sql = "update categoria set nome_categoria = '".$cat->getNome()."', descricao_categoria = '".$cat->getDescricao()."' where id_categoria = ".$cat->getId();
+echo $sql;
+        try {
+            $resultado = $this->conexao->exec($sql);
+            return $resultado;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            return $e->getMessage();
+        }
     }
 
     public function deleteCategoria(int $id){
@@ -71,6 +76,12 @@ class CrudCategoria
 
         $sql = "delete from categoria where id_categoria = ".$id;
 
-        $resul = $this->conexao->exec($sql);
+        try {
+            $resultado = $this->conexao->exec($sql);
+            return $resultado;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            return $e->getMessage();
+        }
     }
 }

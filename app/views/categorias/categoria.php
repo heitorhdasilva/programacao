@@ -23,5 +23,6 @@
 
 </table>
 <a href="categorias.php?acao=update&id=<?= $categoria->getId()?>">Update</a>
+<a href="categorias.php?acao=delete&id=<?= $categoria->getId()?>">Delete</a>
 </body>
 </html>

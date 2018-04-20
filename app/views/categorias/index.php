@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<a href="?acao=inserir">Inserir</a>
     <h1>Categorias</h1>
     <table>
         <tr>
