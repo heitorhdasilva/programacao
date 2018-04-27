@@ -24,7 +24,7 @@
 <a href="categorias.php?acao=update&id=<?= $categoria->getId()?>">Update</a>
 <a href="categorias.php?acao=delete&id=<?= $categoria->getId()?>">Delete</a>
 <a href="categorias.php">Voltar</a>
-<h2>Produtos da categoria Telefonia</h2>
+<h2>Produtos da categoria <?=$categoria->getNome();?></h2>
 <table>
     <?php foreach ($produtos as $produto): ?>
     <tr>
@@ -39,11 +39,13 @@
         <td><a href="produtos.php?acao=listar&id=<?=$produto->getId()?>&id1=<?=$categoria->getId()?>"><?=$produto->getNome();?></a></td>
         <td><?=$produto->getDescricao();?></td>
         <td><?=$produto->getPreco();?></td>
+        <td><a href="produtos.php?acao=deletar&id=<?=$produto->getId();?>">Deletar</a></td>
+        <td><a href="produtos.php?acao=update&id=<?=$produto->getId();?>&id2=<?=$categoria->getId();?>">Update</a></td>
 
     </tr>
     <?php  endforeach; ?>
 
 </table>
-<a href="produtos.php?acao=inserir&id=<?=$categoria->getId()?>">Inserir novo produto de telefonia</a>
+<a href="produtos.php?acao=inserir&id=<?=$categoria->getId()?>">Inserir novo produto de <?=$categoria->getNome();?></a>
 </body>
 </html>

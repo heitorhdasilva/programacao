@@ -42,7 +42,36 @@ class CrudProduto
     public function insertProduto(Produto $prod){
         $this->conexao = DBConnection::getConexao();
 
-        $sql = "insert into produto(nome_produto,descricao_produto,preco_produto,id_categoria) value ('".$prod->getNome()."','".$prod->getDescricao()."','".$prod->getPreco()."',".$prod->getIdCategoria().")";
+        $sql = "insert into produto(nome_produto,descricao_produto,preco_produto,id_categoria,foto_produto) value ('".$prod->getNome()."','".$prod->getDescricao()."','".$prod->getPreco()."',".$prod->getIdCategoria().",'".$prod->setFoto('')."')";
+
+        try {
+            $resultado = $this->conexao->exec($sql);
+            return $resultado;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            return $e->getMessage();
+        }
+    }
+
+    public function deleteProduto(int $id){
+        $this->conexao = DBConnection::getConexao();
+
+        $sql = "delete from produto where id_produto = ".$id;
+
+        try {
+            $resultado = $this->conexao->exec($sql);
+            return $resultado;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            return $e->getMessage();
+        }
+    }
+
+    public function updateProduto(Produto $prod){
+        $this->conexao = DBConnection::getConexao();
+
+
+        $sql = "update produto set nome_produto = '".$prod->getNome()."', descricao_produto = '".$prod->getDescricao()."', preco_produto=".$prod->getPreco()." where id_produto = ".$prod->getId();
 
         try {
             $resultado = $this->conexao->exec($sql);

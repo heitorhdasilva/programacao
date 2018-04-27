@@ -35,4 +35,26 @@ switch ($acao) {
             include '../views/produtos/inserir.php';
         }
         break;
+    case 'deletar':
+        $crud = new CrudProduto();
+        $res = $crud->deleteProduto($_GET['id']);
+        header('Location: categorias.php');
+        break;
+    case 'update':
+        $crud = new CrudProduto();
+        if (isset($_POST['gravar'])){
+            $id = $_POST['id'];
+            $nome = $_POST['nome'];
+            $descricao = $_POST['descricao'];
+            $preco = $_POST['preco'];
+            $id_categoria = $_POST['id_categoria'];
+            $newprod = new Produto($id, $nome, $descricao,$preco,$id_categoria);
+            $res = $crud->updateProduto($newprod);
+            var_dump($res);
+            header('Location: categorias.php');
+        }else{
+            $prod = $crud->getProduto($_GET['id']);
+            include '../views/produtos/update.php';
+        }
+        break;
 }
