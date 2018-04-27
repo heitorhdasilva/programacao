@@ -5,7 +5,7 @@
  * Date: 20/04/18
  * Time: 15:51
  */
-require "DBConnection.php";
+require_once "DBConnection.php";
 require "Produto.php";
 class CrudProduto
 {
@@ -25,10 +25,10 @@ class CrudProduto
         return $objcat;
     }
 
-    public function getProdutos(){
+    public function getProdutos(int $id){
         $this->conexao = DBConnection::getConexao();
 
-        $sql = 'select * from produto';
+        $sql = 'select * from produto where id_categoria ='.$id;
 
         $result = $this->conexao->query($sql);
         $produtos = $result->fetchAll(PDO::FETCH_ASSOC);
@@ -38,4 +38,19 @@ class CrudProduto
         }
         return $listaProdutos;
     }
+
+    public function insertProduto(Produto $prod){
+        $this->conexao = DBConnection::getConexao();
+
+        $sql = "insert into produto(nome_produto,descricao_produto,preco_produto,id_categoria) value ('".$prod->getNome()."','".$prod->getDescricao()."','".$prod->getPreco()."',".$prod->getIdCategoria().")";
+
+        try {
+            $resultado = $this->conexao->exec($sql);
+            return $resultado;
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            return $e->getMessage();
+        }
+    }
+
 }

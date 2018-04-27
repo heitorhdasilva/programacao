@@ -14,13 +14,15 @@
         <th>id</th>
         <th>Nome</th>
         <th>Descricao</th>
+        <th>Preco</th>
+        <th>Categoria</th>
     </tr>
     <tr>
-        <td><?=$produto->getId()?></td>
-        <td><?=$produto->getNome()?></td>
-        <td><?=$produto->getDescricao()?></td>
-        <td><?=$produto->getPreco()?></td>
-        <td><?=$categoria->getNome()?></td>
+        <td><?=$produto->getId()?> - </td>
+        <td><?=$produto->getNome()?> - </td>
+        <td><?=$produto->getDescricao()?> - </td>
+        <td><?=$produto->getPreco()?> - </td>
+        <td><?=$categoria->getNome()?> - </td>
     </tr>
 
 </table>

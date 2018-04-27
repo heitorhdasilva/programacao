@@ -5,7 +5,7 @@
  * Date: 09/03/18
  * Time: 08:55
  */
-require "DBConnection.php";
+require_once "DBConnection.php";
 require "Categoria.php";
 
 
@@ -61,7 +61,7 @@ class CrudCategoria
 
 
         $sql = "update categoria set nome_categoria = '".$cat->getNome()."', descricao_categoria = '".$cat->getDescricao()."' where id_categoria = ".$cat->getId();
-echo $sql;
+
         try {
             $resultado = $this->conexao->exec($sql);
             return $resultado;

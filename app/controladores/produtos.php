@@ -2,6 +2,7 @@
 
 
 require_once  '../models/CrudProduto.php';
+require_once  '../models/CrudCategoria.php';
 
 
 if (isset($_GET['acao'])) {
@@ -21,7 +22,17 @@ switch ($acao) {
         $crud = new CrudProduto();
         $crud2 = new CrudCategoria();
         $produto = $crud->getProduto($_GET['id']);
-        $categoria = $crud2->getCategoria($produto->getIdCategoria());
+        $categoria = $crud2->getCategoria($_GET['id1']);
         include '../views/produtos/produto.php';
+        break;
+    case 'inserir':
+        $crud = new CrudProduto();
+        if (isset($_POST['gravar'])){
+            $produto = new Produto('',$_POST['nome'],$_POST['descricao'],$_POST['preco'],$_POST['id_categoria']);
+            $res = $crud->insertProduto($produto);
+            header('Location: categorias.php');
+        }else{
+            include '../views/produtos/inserir.php';
+        }
         break;
 }

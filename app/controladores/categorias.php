@@ -1,5 +1,6 @@
 <?php
 require_once '../models/CrudCategoria.php';
+require_once '../models/CrudProduto.php';
 
 if (isset($_GET['acao'])) {
     $acao = $_GET['acao'];
@@ -26,6 +27,8 @@ switch ($acao){
         break;
     case 'listar':
         $crud = new CrudCategoria();
+        $crud1 = new CrudProduto();
+        $produtos = $crud1->getProdutos($_GET['id']);
         $categoria = $crud->getCategoria($_GET['id']);
         include '../views/categorias/categoria.php';
         break;

@@ -21,7 +21,7 @@ class Produto
         $this->nome = $nome;
         $this->descricao = $descricao;
         $this->preco = $preco;
-        $this->id_categoria;
+        $this->id_categoria = $id_categoria;
     }
     /**
      * @return mixed
