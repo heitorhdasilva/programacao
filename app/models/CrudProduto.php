@@ -25,10 +25,10 @@ class CrudProduto
         return $objcat;
     }
 
-    public function getProdutos(int $id){
+    public function getProdutos(){
         $this->conexao = DBConnection::getConexao();
 
-        $sql = 'select * from produto where id_categoria ='.$id;
+        $sql = 'select * from produto';
 
         $result = $this->conexao->query($sql);
         $produtos = $result->fetchAll(PDO::FETCH_ASSOC);

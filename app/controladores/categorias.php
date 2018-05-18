@@ -10,9 +10,10 @@ if (isset($_GET['acao'])) {
 
 switch ($acao){
     case 'index':
-        echo '<pre>';
         $crud = new CrudCategoria();
+        $crud1 = new CrudProduto();
         $categorias = $crud->getCategorias();
+        $produtos = $crud1->getProdutos();
         include '../views/categorias/index.php';
         break;
     case 'inserir':
